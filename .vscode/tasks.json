@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"taks": [
+		{
+			"label": "build", 	// Name of the task
+			"type": "shell", 	// Type of the task
+			"command":"cmake", 	// Command to run
+			"args": [
+				"--build", 		// Arguments to pass to the command
+				"${workspaceFolder}/build"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": ["$gcc"],
+			"detail": "generated task by debugger."
+		}
+	]
+}
