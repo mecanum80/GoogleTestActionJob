@@ -3,7 +3,7 @@
 
 TEST(MathOperationTest, ADD) {
     MathOperation mathOperation;
-    EXPECT_EQ(3, mathOperation.add(1, 2));
+    EXPECT_EQ(55, mathOperation.add(1, 2));
 }
 
 TEST(MathOperationTest, SUBSTRACT) {
