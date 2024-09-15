@@ -42,9 +42,12 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
+# Enable testing
+enable_testing()
 
 # Now simnply link against gtest  or gtest_main as neeeded. Eg
 add_executable(runTests ${PROJECT_PATH}/tests/test_math_operations.cpp ${PROJECT_PATH}/src/Calculator/MathOperation.cpp)
 target_include_directories(runTests PRIVATE ${PROJECT_PATH}/src/Calculator)
 target_link_libraries(runTests gtest_main)
+
 add_test(NAME runtTests COMMAND runTests)
