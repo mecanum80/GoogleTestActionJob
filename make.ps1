@@ -23,6 +23,11 @@ function Run-Project {
     Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $buildDir; .\Debug\SetUpGoogleTestActionJob.exe"
 }
 
+# Function to run the tests
+function Run-Tests {
+    Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $buildDir; .\Debug\runTests.exe"
+}
+
 # Main script logic
 Push-Location $rootDir
 switch ($action) {
@@ -32,6 +37,10 @@ switch ($action) {
     "run" {
         Run-Project
     }
+    "test" {
+        Run-Tests
+    }
+
     default {
         Write-Host "Invalid action: $action. Use 'build' or 'run'"
     }

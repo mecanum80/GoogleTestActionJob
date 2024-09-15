@@ -19,6 +19,21 @@
           "ignoreFailures": true
         }
       ]
+    },
+    {
+      "name": "Debug SetUpGoogleTestActionJob",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Debug/SetUpGoogleTestActionJob.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "preLaunchTask": "build",
+      "visualizerFile": "${workspaceFolder}/.vscode/gdb.visualizers",
+      "internalConsoleOptions": "openOnSessionStart"
+
     }
   ]
 }

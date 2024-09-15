@@ -1,6 +1,6 @@
 {
 	"version": "2.0.0",
-	"taks": [
+	"tasks": [
 		{
 			"label": "build", 	// Name of the task
 			"type": "shell", 	// Type of the task
