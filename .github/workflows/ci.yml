@@ -33,6 +33,8 @@ jobs:
       with:
         name: test-results
         path: build/test-results.xml
+        if-no-files-found: warn
+        include-hidden-files: false
 
 
   
