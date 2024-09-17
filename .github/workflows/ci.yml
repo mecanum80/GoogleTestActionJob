@@ -23,7 +23,7 @@ jobs:
         wget https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-linux-x86_64.sh
         sudo mkdir /opt/cmake
         sudo sh cmake-3.21.3-linux-x86_64.sh --skip-license --prefix=/opt/cmake
-        udo rm -f /usr/local/bin/ccmake /usr/local/bin/cmake /usr/local/bin/cmake-gui /usr/local/bin/cpack /usr/local/bin/ctest
+        sudo rm -f /usr/local/bin/ccmake /usr/local/bin/cmake /usr/local/bin/cmake-gui /usr/local/bin/cpack /usr/local/bin/ctest
         sudo ln -s /opt/cmake/bin/* /usr/local/bin/
 
     - name: Set up CMake
