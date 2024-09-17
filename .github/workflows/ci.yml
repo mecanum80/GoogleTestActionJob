@@ -27,6 +27,9 @@ jobs:
 
     - name: Run tests and generate report
       run: ctest --test-dir build --output-on-failure --output-junit build/test-results.xml
+
+    - name: List build directory contents
+      run: ls -la build
     
     - name: Upload test results
       uses: actions/upload-artifact@v3
