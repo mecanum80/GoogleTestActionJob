@@ -15,6 +15,15 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+    
+    - name: Install CMake
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget
+        wget https://github.com/Kitware/CMake/releases/download/v3.21.3/cmake-3.21.3-linux-x86_64.sh
+        sudo mkdir /opt/cmake
+        sudo sh cmake-3.21.3-linux-x86_64.sh --skip-license --prefix=/opt/cmake
+        sudo ln -s /opt/cmake/bin/* /usr/local/bin/
 
     - name: Set up CMake
       uses: jwlawson/actions-setup-cmake@v1
