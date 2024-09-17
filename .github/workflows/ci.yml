@@ -30,6 +30,9 @@ jobs:
 
     - name: List build directory contents
       run: ls -la build
+
+    - name: List Testing directory contents
+      run: ls -la build/Testing
     
     - name: Upload test results
       uses: actions/upload-artifact@v3
