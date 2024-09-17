@@ -41,6 +41,9 @@ jobs:
     
     - name: List entire build directory contents
       run: find build
+
+    - name: Check ctest version
+      run: ctest --version
         
     - name: Upload test results
       uses: actions/upload-artifact@v3
