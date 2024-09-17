@@ -33,6 +33,9 @@ jobs:
 
     - name: List Testing directory contents
       run: ls -la build/Testing
+
+    - name: List Temporary directory contents
+      run: ls -la build/Testing/Temporary
     
     - name: Upload test results
       uses: actions/upload-artifact@v3
