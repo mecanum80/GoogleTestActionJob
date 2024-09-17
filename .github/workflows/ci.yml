@@ -37,7 +37,7 @@ jobs:
 
     - name: Run tests and generate report
       run: |
-        ctest --test-dir build --output-on-failure --output-junit build/test-results.xml
+        ctest --test-dir build --output-on-failure --output-junit test-results.xml
         echo "ctest completed"
 
     - name: List build directory contents
