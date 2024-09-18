@@ -19,7 +19,7 @@ jobs:
         - name: Run cppcheck
           run: | 
             cppcheck --enable=all --inconclusive --xml --xml-version=2 . 2> cppcheck-report.xml
-            cppcheck --enable=all --incconclusive.
+            cppcheck --enable=all --inconclusive.
 
 
         - name: Upload cppcheck report
