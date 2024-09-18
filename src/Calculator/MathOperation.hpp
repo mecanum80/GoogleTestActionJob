@@ -9,7 +9,7 @@ class MathOperation {
      * @param a 
      * @param b 
      */
-    int  add(int a, int b) const;
+    static int  add(int a, int b);
 
     /**
      * @brief substract two numbers
@@ -17,7 +17,7 @@ class MathOperation {
      * @param a 
      * @param b 
      */
-    int substract(int a, int b) const;
+    static int substract(int a, int b) ;
 
     /**
      * @brief multiply two numbers
@@ -25,12 +25,12 @@ class MathOperation {
      * @param a 
      * @param b 
      */
-    int multiply(int a, int b) const;
+    static int multiply(int a, int b) ;
 
     /**
      * @brief divide two numbers
      * 
      */
-    double divide(double a, double b) const;
+    static double divide(double a, double b);
 
 };

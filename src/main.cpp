@@ -4,10 +4,9 @@
 
 
 int main() {
-    MathOperation mathOperation;
-    std::cout << mathOperation.add(1, 2) << std::endl;
-    std::cout << mathOperation.substract(1, 2) << std::endl;
-    std::cout << mathOperation.multiply(1, 2) << std::endl;
-    std::cout << mathOperation.divide(1, 2) << std::endl;	
+    std::cout << MathOperation::add(1, 2) << std::endl;
+    std::cout << MathOperation::substract(1, 2) << std::endl;
+    std::cout << MathOperation::multiply(1, 2) << std::endl;
+    std::cout << MathOperation::divide(1, 2) << std::endl;	
     return 0;
 }
