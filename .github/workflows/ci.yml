@@ -8,6 +8,10 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+  checks: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -39,21 +43,6 @@ jobs:
       run: |
         ctest --test-dir build --output-on-failure --output-junit test-results.xml
         echo "ctest completed"
-
-    - name: List build directory contents
-      run: ls -la build
-
-    - name: List Testing directory contents
-      run: ls -la build/Testing
-
-    - name: List Temporary directory contents
-      run: ls -la build/Testing/Temporary
-    
-    - name: List entire build directory contents
-      run: find build
-
-    - name: Check ctest version
-      run: ctest --version
         
     - name: Upload test results
       uses: actions/upload-artifact@v3
